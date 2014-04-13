@@ -1,8 +1,15 @@
 language: java
 
-install: mvn clean source:jar install
+env:
+  global:
+    - secure: "BPIduZcsCsc+MUV5Efy7cT/HhbdNuFElvDKOu7oD723iM9FQqkXBPEIVfqdMiLJB3GDwBH7h/NI3+cfV5MIveyKmV9k05Quuugk8Ri0VV8kZEO5wChklnulUeNGSUR9E45epQS4RWs+fRXWag32OhCnRcg9hMuYsEa0pPrO588s="
+
+install: mvn install
 
 jdk:
   - oraclejdk7
   - openjdk7
   - openjdk6
+  
+after_success:
+  ./script/travis_artifact_deployment.sh
