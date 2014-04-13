@@ -8,6 +8,10 @@ git config --global user.name "travis-ci"
 
 git clone -q --branch=gh-pages https://${GH_TOKEN}@github.com/basmussen/maven-jsondoc-plugin.git gh-pages > /dev/null 2>&1 || error_exit "Error cloning repository";
 
+#git add .
+#git commit -q -m "Travis build $TRAVIS_BUILD_NUMBER"
+#git push -fq origin gh-pages > /dev/null 2>&1 || error_exit "Error uploading artifacts"
+
 # processing time
 end=$(date +%s)
 elapsed=$(( $end - $start ))
