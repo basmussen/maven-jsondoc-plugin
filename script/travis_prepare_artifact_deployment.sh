@@ -1,7 +1,6 @@
 #!/bin/bash
 start=$(date +%s)
 echo -e "Current repo: $TRAVIS_REPO_SLUG\n"
-echo pwd 
 
 # git
 git config --global user.email "travis@travis-ci.org"
