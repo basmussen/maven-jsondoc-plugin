@@ -6,7 +6,7 @@ echo -e "Current repo: $TRAVIS_REPO_SLUG\n"
 git config --global user.email "travis@travis-ci.org"
 git config --global user.name "travis-ci"
 
-git clone -q --branch=gh-pages https://${GH_TOKEN}@github.com/basmussen/maven-jsondoc-plugin.git gh-pages
+git clone -q --branch=gh-pages https://${GH_TOKEN}@github.com/basmussen/maven-jsondoc-plugin.git gh_pages
 
 # processing time
 end=$(date +%s)
