@@ -16,4 +16,4 @@ jdk:
   - openjdk6
   
 after_success: 
- ./script/travis_artifact_deployment.sh
+  - ./script/travis_artifact_deployment.sh
