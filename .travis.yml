@@ -5,7 +5,6 @@ env:
     - secure: "BPIduZcsCsc+MUV5Efy7cT/HhbdNuFElvDKOu7oD723iM9FQqkXBPEIVfqdMiLJB3GDwBH7h/NI3+cfV5MIveyKmV9k05Quuugk8Ri0VV8kZEO5wChklnulUeNGSUR9E45epQS4RWs+fRXWag32OhCnRcg9hMuYsEa0pPrO588s="
 
 before_script: 
-  - echo pwd
   - ./script/travis_prepare_artifact_deployment.sh
 
 install: mvn clean source:jar javadoc:jar deploy -Dtravis-ci=true
