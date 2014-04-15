@@ -10,7 +10,7 @@ cd gh-pages
 
 git add .
 git commit -q -m "Travis build $TRAVIS_BUILD_NUMBER"
-git push -fq origin gh-pages > /dev/null 2>&1 || error_exit "Error uploading artifacts"
+git push -fq
 
 # processing time
 end=$(date +%s)
