@@ -8,12 +8,10 @@ before_script:
   - echo pwd
   - ./script/travis_prepare_artifact_deployment.sh
 
-install: mvn source:jar install
+install: mvn clean source:jar deploy
 
 jdk:
   - oraclejdk7
-  - openjdk7
-  - openjdk6
   
 after_success: 
   - ./script/travis_artifact_deployment.sh
