@@ -10,7 +10,7 @@ cd gh-pages
 
 git add .
 git commit -q -m "Travis build $TRAVIS_BUILD_NUMBER"
-git push -fq origin gh-pages
+git push -q
 
 # processing time
 end=$(date +%s)
