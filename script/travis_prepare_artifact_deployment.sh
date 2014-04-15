@@ -13,4 +13,4 @@ end=$(date +%s)
 elapsed=$(( $end - $start ))
 minutes=$(( $elapsed / 60 ))
 seconds=$(( $elapsed % 60 ))
-echo "Post-Build process finished in $minutes minute(s) and $seconds seconds"
+echo "Before-Build process finished in $minutes minute(s) and $seconds seconds"
