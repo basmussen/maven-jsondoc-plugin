@@ -1,7 +1,5 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-
-
 	<groupId>org.jsondoc</groupId>
 	<artifactId>maven-jsondoc-plugin</artifactId>
 	<version>1.0.2-SNAPSHOT</version>
@@ -161,12 +159,12 @@
 			<distributionManagement>
 				<snapshotRepository>
 					<id>gh_snapshots</id>
-					<url>file:./repositories/snapshots/</url>
+					<url>file:./gh-pages/repositories/snapshots/</url>
 					<uniqueVersion>true</uniqueVersion>
 				</snapshotRepository>
 				<repository>
 					<id>gh_releases</id>
-					<url>file:./repositories/releases/</url>
+					<url>file:./gh-pages/repositories/releases/</url>
 				</repository>
 			</distributionManagement>
 		</profile>
