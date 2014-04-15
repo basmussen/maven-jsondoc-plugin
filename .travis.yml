@@ -10,7 +10,7 @@ jdk:
 before_script: 
   - ./script/travis_prepare_artifact_deployment.sh
 
-script:
+install:
   - mvn clean source:jar javadoc:jar deploy -Dtravis-ci=true
 
 after_success: 
