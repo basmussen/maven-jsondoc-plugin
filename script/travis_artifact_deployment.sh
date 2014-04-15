@@ -7,7 +7,7 @@ git config --global user.email "travis@travis-ci.org"
 git config --global user.name "travis-ci"
 git config --global push.default simple
 
-cd gh-pages
+cd gh_pages
 
 git add .
 git commit -q -m "Travis build $TRAVIS_BUILD_NUMBER"
