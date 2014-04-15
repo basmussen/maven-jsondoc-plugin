@@ -147,8 +147,28 @@
 						</executions>
 					</plugin>
 				</plugins>
-
 			</build>
+		</profile>
+		<!-- profile travis-ci.org -->
+		<profile>
+			<id>distribution</id>
+			<activation>
+				<property>
+					<name>travis-ci</name>
+					<value>true</value>
+				</property>
+			</activation>
+			<distributionManagement>
+				<snapshotRepository>
+					<id>gh_snapshots</id>
+					<url>file:./repositories/snapshots/</url>
+					<uniqueVersion>true</uniqueVersion>
+				</snapshotRepository>
+				<repository>
+					<id>gh_releases</id>
+					<url>file:./repositories/releases/</url>
+				</repository>
+			</distributionManagement>
 		</profile>
 	</profiles>
 </project>
